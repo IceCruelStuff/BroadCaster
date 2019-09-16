@@ -25,7 +25,7 @@ class SendPopup extends PluginBase implements CommandExecutor{
         $this->plugin = $plugin;
     }
     
-    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
+    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
     	switch(strtolower($cmd->getName())){
     			case "sendpopup":
     				$this->temp = $this->plugin->getConfig()->getAll();
