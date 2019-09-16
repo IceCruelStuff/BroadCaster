@@ -23,7 +23,7 @@ use Broadcaster\Tasks\PopupTask;
 use Broadcaster\Tasks\Broadcaster\Tasks;
 class Commands extends PluginBase implements CommandExecutor{
 	
-	public function __construct(Main $plugin){
+	public function __construct(BroadCaster $plugin){
         $this->plugin = $plugin;
     }
     
