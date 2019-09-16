@@ -28,7 +28,7 @@ class Commands extends PluginBase implements CommandExecutor{
     }
     
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-    	switch(strtolower($cmd->getName())){
+    	switch(strtolower($command->getName())){
     			case "broadcaster":
     				if(isset($args[0])){
     			   		$args[0] = strtolower($args[0]);
