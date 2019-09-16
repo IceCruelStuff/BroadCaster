@@ -56,7 +56,7 @@ class Main extends PluginBase{
     	return $message;
     }
     
-    public function onEnable(){
+    public function onEnable() : void{
 	    @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $this->cfg = $this->getConfig()->getAll();
