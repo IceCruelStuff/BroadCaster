@@ -27,7 +27,7 @@ class Commands extends PluginBase implements CommandExecutor{
         $this->plugin = $plugin;
     }
     
-    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
     	switch(strtolower($cmd->getName())){
     			case "broadcaster":
     				if(isset($args[0])){
