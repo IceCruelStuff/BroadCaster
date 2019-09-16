@@ -15,7 +15,7 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-class Main extends PluginBase{
+class BroadCaster extends PluginBase{
 	
 	//About Plugin Const
 	const PRODUCER = "EvolSoft";
